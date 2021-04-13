@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>표 만들기</title>
+<style>
+td {
+	padding: 5px; /*셀 테두리와 내용 사이의 간격(패딩)*/
+}
+</style>
+</head>
+<body>
+	<table border="1">
+	<colgroup> 
+	<!-- colgroup: 하나 이상의 열을 그룹으로 묶을 때 사용,col요소를 포함하여 열마다 다른 스타일을 적용할 수 있다. -->
+		<col style="width:100px;">
+		<col style="width:300px;">
+		<col style="width:100px;">
+		<col style="width:300px;">
+	</colgroup>
+		<tr>
+			<th>이름</th>
+			<td></td>
+			<th>연락처</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>주소</th>
+			<!-- 열 합치기 -->
+			<td colspan="3"></td><!-- colspan: 열을 묶는다 -->
+		</tr>
+		<tr>
+			<th>자기소개</th>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+</body>
+</html>
