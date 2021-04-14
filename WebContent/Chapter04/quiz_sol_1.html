@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div.container{
+	width:600px;
+	margin:0 auto;
+}
+div.cls{
+text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+fieldset p{
+	font-weight:bold;
+	font-size:18px;
+}
+fieldset p.sub{
+	font-size:15px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<form>
+	<fieldset class="field">
+	<h1>프런트 엔드 개발자 지원서</h1>
+	<p class="sub">HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+	<hr>
+	 <p>개인정보</p>
+		<ul>
+			<li><label for="name">이름</label> <input type="text" id="name" placeholder="공백없이 입력하세요">
+			</li>
+			<li><label for="tel">연락처</label> <input type="tel" id="tel">
+			</li>
+		</ul>
+	 <p>지원분야</p>
+		<ul>
+			<li><label><input type="radio" name="subject"
+					value="Publishing">웹 퍼블리싱</label>
+			<li><label><input type="radio" name="subject"
+					value="application">웹 어플리케이션</label>
+			<li><label><input type="radio" name="subject"
+					value="develop">개발 환경 개선</label>
+		</ul>
+	 <p>지원 동기</p>
+		<textarea rows="5" cols="80" placeholder="본사 지원 동기를 간략히 써 주세요">
+		</textarea>		
+		<br>
+		<div class="cls">
+		<input type="submit" value="접수하기">
+		<input type="reset" value="다시쓰기">
+		</div>
+	</fieldset>
+</form>
+</div>
+</body>
+</html>
